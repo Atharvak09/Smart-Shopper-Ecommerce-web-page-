@@ -1,0 +1,69 @@
+/* CSS for ProductList */
+.product-list-page {
+    display: flex; /* Use flexbox to arrange children side by side */
+    margin: 20px; /* Margin around the entire component */
+  }
+  
+  /* Filter section styles */
+  .filter-section {
+    flex: 1; /* Take up one part of the space */
+    padding: 20px; /* Padding for inner spacing */
+    border-right: 1px solid #ccc; /* Add a border to separate from product list */
+    background-color: #f9f9f9; /* Light background color */
+    min-width: 250px; /* Ensure a minimum width for the filter section */
+  }
+  
+  /* Product list styles */
+  .product-list {
+    flex: 3; /* Take up three parts of the space */
+    padding: 20px; /* Padding for inner spacing */
+    background-color: #fff; /* Set background color for product list */
+  }
+  
+  .product-list h2 {
+    font-size: 24px; /* Font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Color for the heading */
+  }
+  
+  /* List styling */
+  .product-list ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .product-list li {
+    display: flex; /* Use flexbox for item layout */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 15px; /* Space between items */
+    padding: 10px; /* Inner padding */
+    border: 1px solid #ddd; /* Optional: Add a border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #fff; /* Background color for items */
+    transition: box-shadow 0.3s; /* Transition for hover effect */
+  }
+  
+  .product-list li:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a shadow on hover */
+  }
+  
+  /* Styling for product images */
+  .product-list img {
+    width: 80px; /* Fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between image and text */
+  }
+  
+  /* Styling for product names and prices */
+  .product-list p {
+    margin: 0; /* Remove default margins */
+    font-size: 16px; /* Set a standard font size */
+    color: #555; /* Darker text color for descriptions */
+  }
+  
+  .product-list p.price {
+    font-weight: bold; /* Bold price */
+    color: #000; /* Black color for price */
+  }
+  

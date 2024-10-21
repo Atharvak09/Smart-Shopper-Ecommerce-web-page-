@@ -1,0 +1,65 @@
+/* Hero Section */
+#hero {
+    background-image: url("images/back3.jpg");
+    height: 100vh; 
+    width: 100%;
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    padding: 0 40px;  /* Reduced padding for better balance */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;  /* Ensures centered text alignment */
+}
+
+/* Hero Heading */
+#hero h2 {
+    font-size: 60px;      /* Slightly larger for a bolder effect */
+    line-height: 1.2;     /* Improved line-height for better spacing */
+    color: #faf9f9;       /* Keep the text white for contrast */
+    margin-bottom: 20px;  /* Added margin to separate heading and paragraph */
+    margin-right: 100px;
+}
+
+/* Hero Paragraph */
+#hero p {
+    font-size: 20px;      /* Defined font-size for consistency */
+    color: #faf9f9;       /* White text for visibility */
+    margin: 0;            /* Removed default margins */
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+
+/* Medium Screens (Max-width: 799px) */
+@media (max-width: 799px) { 
+    #hero {
+        height: 80vh;                      /* Slightly reduced height for smaller screens */
+        padding: 0 20px;                   /* Reduced padding for better mobile fit */
+        background-position: top center;   /* Adjusted background position for better focus on the image */
+    }
+    h2 {
+        font-size: 36px;                   /* Smaller font-size for heading */
+    }  
+    #hero p {
+        font-size: 18px;                   /* Slightly smaller paragraph font */
+    }
+}
+
+/* Small Screens (Max-width: 477px) */
+@media (max-width: 477px) {
+    #hero {
+        height: 70vh;                      /* Reduced height for smaller screens */
+        padding: 0 15px;                   /* Less padding to fit smaller viewports */
+        background-position: center 40%;   /* Adjusted background focus */
+    }
+
+    h2 {
+        font-size: 28px;                   /* Scaled down heading */
+    }
+
+    #hero p {
+        font-size: 16px;                   /* Scaled down paragraph */
+    }
+}

@@ -1,0 +1,75 @@
+/* Footer Section */
+footer {
+    color: #060606; /* Light text color for contrast */
+    padding: 40px 20px; /* Spacing around footer */
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap on small screens */
+    justify-content: space-between; /* Distribute columns evenly */
+    align-items: left;
+}
+
+/* Column Styling */
+.col {
+    flex: 1; /* Allow columns to grow */
+    min-width: 220px; /* Minimum width for responsiveness */
+    margin: 15px; /* Margin between columns */
+}
+
+/* Headings */
+h4 {
+    font-size: 18px; /* Size of section headings */
+    margin-bottom: 10px; /* Space below headings */
+}
+
+/* Paragraphs */
+p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+/* Links */
+a {
+    color: #060606; /* Link color */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make links block elements */
+    margin: 5px 0; /* Space between links */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Hover Effect for Links */
+a:hover {
+    color: #f39c12; /* Change color on hover */
+}
+
+/* Social Media Icons */
+.follow {
+    margin-top: 10px; /* Space above social icons */
+}
+
+.icon {
+    display: flex; /* Flexbox for social icons */
+    gap: 15px; /* Space between icons */
+}
+
+.icon i {
+    color: #040404; /* Color for icons */
+    font-size: 20px; /* Size of icons */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.icon i:hover {
+    color: #f39c12; /* Change color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 799px) {
+    footer {
+        flex-direction: column; /* Stack columns vertically on small screens */
+        align-items: center; /* Center columns */
+        padding: 20px; /* Reduced padding */
+    }
+    
+    .col {
+        min-width: 100%; /* Full width on small screens */
+        text-align: center; /* Center text in columns */
+    }
+}

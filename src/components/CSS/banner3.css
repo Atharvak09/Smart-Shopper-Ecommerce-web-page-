@@ -1,0 +1,99 @@
+/* Banner Section */
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Ensure boxes stay in a single row */
+    padding: 0 30px;
+    gap: 20px; /* Gap between boxes */
+}
+
+/* Banner Box Styling */
+#banner3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("images/up.jpg");
+    width: 32%;  /* Adjusted for uniform width in a row */
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 8px; /* Added subtle rounding for cleaner look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+#banner3 .banner-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+}
+
+/* Banner 2 and 3 Custom Backgrounds */
+#banner3 .banner-box2 {
+    background-image: url("images/banner3.avif");
+}
+
+#banner3 .banner-box3 {
+    background-image: url("images/banner4.jpg");
+}
+
+/* Headings and Subheadings */
+#banner3 h2 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+#banner3 h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* Responsive Adjustments */
+
+/* Medium Screens (Max-width: 799px) */
+@media (max-width: 799px) {
+    #banner3 {
+        padding: 0 20px;
+        gap: 10px; /* Reduced gap for smaller screens */
+    }
+
+    #banner3 .banner-box {
+        width: 32%; /* Keep the boxes side by side but reduce width slightly */
+        height: 25vh;
+    }
+
+    #banner3 h2 {
+        font-size: 20px;
+    }
+
+    #banner3 h3 {
+        font-size: 14px;
+    }
+}
+
+/* Small Screens (Max-width: 477px) */
+@media (max-width: 477px) {
+    #banner3 {
+        flex-wrap: wrap; /* Allow wrapping on small screens */
+        padding: 0 10px;
+        gap: 10px; /* Smaller gap */
+    }
+
+    #banner3 .banner-box {
+        width: 100%; /* Full width for mobile */
+        height: 35vh; /* Adjusted height */
+        margin-bottom: 20px;
+    }
+
+    #banner3 h2 {
+        font-size: 18px; /* Smaller font size for mobile */
+    }
+
+    #banner3 h3 {
+        font-size: 12px;
+    }
+}

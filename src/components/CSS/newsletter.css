@@ -1,0 +1,92 @@
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("images/news.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #041e42;
+    height: 20vh;
+    padding: 20px; /* Added padding for better spacing */
+    border-radius: 8px; /* Added border radius for a smoother look */
+}
+
+#newsletter h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0; /* Removed margin for better alignment */
+}
+
+#newsletter p {
+    margin-top: 10px; /* Adjusted margin for tighter spacing */
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+
+#newsletter p span {
+    color: #ffbd27;
+}
+
+#newsletter input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    border: 1px solid transparent; /* Corrected border property */
+    border-radius: 4px 0 0 4px; /* Simplified border-radius */
+    outline: none;
+    transition: border 0.3s; /* Added transition for focus effect */
+}
+
+#newsletter input:focus {
+    border: 1px solid #ffbd27; /* Highlight border on focus */
+}
+
+.form {
+    display: flex;
+    width: 40%;
+    align-items: center; /* Center input and button vertically */
+}
+
+#newsletter button {
+    background-color: #088178;
+    color: #fff;
+    border: none; /* Removed default border */
+    height: 3.125rem; /* Match height with input */
+    padding: 0 20px; /* Added padding for better button size */
+    border-radius: 0 4px 4px 0; /* Simplified border-radius */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+#newsletter button:hover {
+    background-color: #066e68; /* Darken button color on hover */
+}
+
+@media (max-width: 799px) {
+    #newsletter {
+        height: auto; /* Allow height to adjust for content */
+        padding: 20px; /* Added padding for smaller screens */
+    }
+    
+    #newsletter .form {
+        width: 100%; /* Full width on smaller screens */
+        margin-top: 20px; /* Added margin to separate elements */
+    }
+}
+
+@media (max-width: 477px) {
+    .section-p1 {
+        padding: 10px; /* Reduced padding for very small screens */
+    }
+    
+    #newsletter h4 {
+        font-size: 20px; /* Adjust font size for small screens */
+    }
+    
+    #newsletter p {
+        font-size: 12px; /* Adjust font size for small screens */
+    }
+}

@@ -1,0 +1,105 @@
+/* General Header Styles */
+#header {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Add padding around header */
+    background-color: white; /* Header background color */
+    color: #222; /* Text color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+/* Logo and Title */
+#header p {
+    font-size: 24px; /* Title font size */
+    font-weight: bold; /* Bold font for title */
+    margin: 0; /* Remove default margin */
+}
+
+/* Navbar Styles */
+#navbar {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Display navbar items in a row */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+#navbar li {
+    margin: 0 15px; /* Space between navbar items */
+}
+
+#navbar a {
+    text-decoration: none; /* Remove underline */
+    color: #222; /* Default link color */
+    font-weight: 600; /* Font weight */
+    transition: color 0.2s; /* Smooth transition on hover */
+}
+
+#navbar a:hover {
+    color: #C96868; /* Change color on hover */
+}
+
+/* Active Link Style */
+#navbar a.active {
+    color: #C96868; /* Active link color */
+    border-bottom: 2px solid #C96868; /* Underline active link */
+}
+
+/* Shopping Bag Icon */
+#bag {
+    margin-left: auto; /* Push shopping bag icon to the right */
+}
+
+#bag a {
+    font-size: 24px; /* Icon size */
+    color: #222; /* Icon color */
+}
+
+/* Close Button */
+#close {
+    display: none; /* Hide close button on desktop */
+    margin-left: 20px; /* Space from the previous item */
+}
+
+/* Mobile Styles */
+#mobile {
+    display: none; /* Hide mobile menu by default */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    #navbar {
+        display: none; /* Hide navbar on mobile */
+        flex-direction: column; /* Stack navbar items */
+        width: 100%; /* Full width */
+        padding: 10px; /* Add padding */
+        background-color: #FADFA1; /* Background color for mobile menu */
+        position: absolute; /* Position menu absolutely */
+        top: 70px; /* Position below header */
+        left: 0; /* Align to the left */
+        z-index: 1; /* Stack above other elements */
+    }
+
+    #mobile {
+        display: flex; /* Show mobile menu toggle */
+        justify-content: space-between; /* Space between icons */
+        width: 100%; /* Full width */
+        padding: 10px; /* Add padding */
+        background-color: #FADFA1; /* Background color */
+    }
+
+    #bar {
+        font-size: 24px; /* Hamburger icon size */
+        cursor: pointer; /* Change cursor on hover */
+    }
+
+    /* Show navbar when mobile menu is active */
+    #mobile.active + #navbar {
+        display: flex; /* Show navbar */
+    }
+}

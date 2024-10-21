@@ -1,0 +1,37 @@
+/* headphones.css */
+.headphones-filter {
+    padding: 20px; /* Add padding around the filter */
+    border: 1px solid #ccc; /* Add a border around the filter */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  }
+  
+  .headphones-filter h1 {
+    font-size: 20px; /* Font size for the title */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  .form-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
+  }
+  
+  label {
+    font-weight: bold; /* Bold labels */
+  }
+  
+  button {
+    margin-top: 10px; /* Space above the button */
+    padding: 10px; /* Padding for button */
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker button on hover */
+  }
+  

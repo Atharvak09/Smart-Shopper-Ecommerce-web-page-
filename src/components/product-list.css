@@ -1,0 +1,56 @@
+/* General styling for the product list section */
+.section-p1 {
+    padding: 50px 0;
+    background-color: #f8f8f8; /* Light background for contrast */
+    text-align: center; /* Center align the heading */
+  }
+  
+  /* Style for the product heading */
+  .section-p1 h2 {
+    font-size: 2rem; /* Font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  /* Container for the products */
+  .pro-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: center; /* Center products horizontally */
+  }
+  
+  /* Individual product card styling */
+  .pro {
+    background-color: #fff; /* White background for products */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Slightly rounded corners */
+    margin: 10px; /* Margin around each product */
+    padding: 15px; /* Padding inside the product card */
+    width: 200px; /* Fixed width for product cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  /* Product image styling */
+  .pro img {
+    width: 100%; /* Responsive image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px 5px 0 0; /* Rounded top corners */
+  }
+  
+  /* Description styling */
+  .des {
+    padding: 10px 0; /* Padding for the description area */
+  }
+  
+  /* Hover effect for product cards */
+  .pro:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+  }
+  
+  /* Handle case when no products are found */
+  .section-p1 p {
+    font-size: 1.2rem; /* Font size for the message */
+    color: #888; /* Gray color for the message */
+    margin-top: 20px; /* Space above the message */
+  }
+  
